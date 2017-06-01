@@ -1,0 +1,13 @@
+package org.hangover;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class HangOverApplication {
+	
+	public static void main(String[] args) {
+		SpringApplication.run(HangOverApplication.class, args);
+	}
+
+}
