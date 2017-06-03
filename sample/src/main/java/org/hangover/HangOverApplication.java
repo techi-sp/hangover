@@ -7,7 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class HangOverApplication {
 	
 	public static void main(String[] args) {
-		SpringApplication.run(HangOverApplication.class, args);
+		SpringApplication app = new SpringApplication(HangOverApplication.class);
+	    app.run(args);
 	}
 
 }

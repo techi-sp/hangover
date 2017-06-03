@@ -1,0 +1,29 @@
+server:
+  port: 8180
+  contextPath: /sample
+  
+logging:
+  level:
+    ROOT: INFO
+
+# below configuration automatically configures datasource, persitence context etc.,
+# spring boot has several autoconfigure file which read properties ex:- check JpaAutoConfigure
+spring:
+  datasource:
+    data: classpath:db/*.sql
+    schema: classpath:db/*.sql
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hangover
+    username: root
+    password: mysql
+  application:
+    name: sample
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+
+
+      
+      
